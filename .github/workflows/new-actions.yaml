@@ -28,6 +28,6 @@ jobs:
 
       - name: Run test
         run: |
-          python -m pytest main.py
+          python -m pytest multiply.py
           
       
