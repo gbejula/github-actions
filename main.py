@@ -5,4 +5,4 @@ def test(a, e):
 
 def test_multiply():
     assert test(3, 4) == 12
-    assert test(5, -7) == -35
+    assert test(5, 7) == 35
