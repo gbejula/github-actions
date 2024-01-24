@@ -23,7 +23,7 @@ jobs:
 
       - name: Run test
         run: |
-          python -m test_miltiply main.py
+          python -m test_multiply main.py
           
       # You can test your matrix by printing the current Python version
       - name: Display Python version
