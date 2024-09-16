@@ -3,9 +3,23 @@ def helloWorld():
 
 helloWorld()
 
-def sum(num1, num2):
-    print(num1 + num2)
+def sum(num1=0, num2=0):
+    if (type(num1) is not int or type(num2) is not int):
+        return
+    return num1 + num2
 
-sum(1, 4)
-sum(4, 5)
-sum(75, 54)
+total = sum(5, 9)
+print(total)
+
+def multiple_items(*args):
+    print(args)
+    print(type(args))
+
+
+multiple_items("David", "Ibukunoluwa", "Jesutoba")
+
+def multNamedItems(**kwargs):
+    print(kwargs)
+    print(type(kwargs))
+
+multNamedItems(first="Ibukunoluwa", middle="Ruth", last="Ajayi")
