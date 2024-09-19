@@ -39,15 +39,20 @@ def play_rps():
 
     print("\nPlay again?")
 
-    playagain = input("\n Y for Yes or \n Q to Quit\n\n")
+    while True:
+        playagain = input("\n Y for Yes or \n Q to Quit\n\n")
+        if playagain.lower() not in ["y", "q"]:
+            continue
+        else:
+            break
 
     if (playagain.lower() == "y"):
-        continue
+        return play_rps()
     else:
         print("\n")
         print("Thank you for playing!\n")
         playagain = False
+        sys.exit("Bye!")
 
 play_rps()
 
-sys.exit("Bye!")
