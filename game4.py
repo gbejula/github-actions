@@ -45,20 +45,6 @@ def play_rps():
     print(game_result)
     print("\n")
 
-    def winner_counter(player, computer):
-        player = 0
-        computer = 0
-
-        if game_result == "🎉 You win.":
-            return "Player: " +  str(player + 1) + "\nComputer: " + str(computer)
-        elif game_result == "🐍 Python win.":
-            return "Computer: " +  str(computer + 1) + "\nPlayer: " + str(player)
-        else:
-            return "No point for each player"
-
-    countOfWinner = winner_counter(player, computer)
-
-    print(countOfWinner)
 
     global game_count
     game_count += 1
