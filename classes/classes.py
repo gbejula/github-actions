@@ -19,6 +19,10 @@ your_car.get_make_model()
 your_car.moves()
 
 class Airplane(Vehicle):
+    def __init__(self, make, model, faa_id):
+        super().__init__(make, model)
+        self.faa_id = faa_id
+
     def moves(self):
         print('Flies along..')
 
@@ -29,7 +33,7 @@ class Truck(Vehicle):
 class Golf(Vehicle):
     pass
 
-cessna = Airplane('Cessna', 'Skyhawk')
+cessna = Airplane('Cessna', 'Skyhawk', 'MA-432345')
 mack = Truck('Mack', 'Pinnacle')
 golf = Golf('GolfCar', 'GC150')
 
